@@ -193,7 +193,7 @@
                     </svg>
                   </a></li>
                 </ul>
-              </li class="ourteam-social">
+              </li>
               <li class="liii-item">
                 <img class="img" src="./img/img5.jpg" alt="Photo" width="270" />
                 <h3 class="section-title">Николай Тарасов</h3>
@@ -309,6 +309,8 @@
 
       <footer class="footer">
         <div class="container">
+
+          <!-- 1 СЕКЦІЯ -->
           <div class="footer-container">
             <a href="./index.html" class="webstudio-footer">Web<span class="logo">Studio</span></a>
             <address class="adress-footer">
@@ -317,6 +319,8 @@
               <p><a href="tel:+380961111111" class="foooter-info">+38 096 111 11 11</a></p>
             </address>
           </div>
+
+          <!-- 2 СЕКЦІЯ -->
           <div class="footerr-container">
             <h3 class="footer-title">присоединяйтесь</h3>
             <ul class="list">
@@ -350,6 +354,20 @@
               </li>
             </ul>
           </div>
+
+          <!-- 3 СЕКЦІЯ -->
+          <div class="footerrr-container">
+            <h3 class="footer-title">Подпишитесь на рассылку</h3>
+            <form action="#" class="footer-form">
+              <input type="email" class="footer-input" name="user-email" placeholder="E-mail">
+              <button type="submit" class="footer-btn">Подписаться
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./img/icon/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+
         </div>
       </footer>
 
@@ -357,7 +375,7 @@
 
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button type="button" data-modal-close class="close-modal" data-modal-close>
+          <button type="button" class="close-modal" data-modal-close>
             <svg class="backdrop-icon" width="18px" height="18px">
               <use href="./img/icons/sprite.svg#icon-close-modal"></use>
             </svg>
@@ -395,9 +413,9 @@
             </div>
               
             <div class="policy-field">
+              <input type="checkbox" name="user-policy" id="user-policy" class="modal-checkbox visually-hidden">
               <label for="user-policy" class="modal-label-policy"><span>Соглашаюсь с рассылкой и принимаю <a href="">Условия
                 договора</a></span></label>
-              <input type="checkbox" name="user-policy" id="user-policy" class="modal-checkbox visually-hidden">
               <button type="submit" class="modal-btn">Отправить</button>
             </div>
                                      

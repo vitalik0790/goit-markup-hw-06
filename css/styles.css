@@ -521,7 +521,6 @@ nav ul li:not(:last-child) {
 
 .footer {
   background: var(--main-footer-background-color);
-  padding-left: 215px;
   padding: 60px;
   padding-top: 60px;
 }
@@ -597,19 +596,17 @@ nav ul li:not(:last-child) {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  text-align: center;
   margin-bottom: 20px;
 }
 
 .footer .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: baseline;
 }
 
 .footerr-container {
   width: 206px;
-  margin-left: 70px;
 }
 
 .footerr-container .list {
@@ -637,6 +634,51 @@ nav ul li:not(:last-child) {
   fill: #ffffff;
 }
 
+/* 3 СЕКЦІЯ */
+
+.footer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  padding-left: 16px;
+  color: var(--secondary-text-color);
+}
+
+.footer-btn {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--text-hover-focus);
+  border: none;
+  margin-left: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-send {
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
 /* BACKDROP */
 
 .backdrop {
@@ -651,7 +693,6 @@ nav ul li:not(:last-child) {
 
 .modal {
   width: 528px;
-  height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -804,5 +845,30 @@ nav ul li:not(:last-child) {
 }
 
 .modal-checkbox:checked + .modal-label-policy::before {
-  background-image: url(../img/icon/check.svg);
+  background-image: url("../img/icon/check.svg");
+  border: none;
+}
+
+.modal-btn {
+  width: 200px;
+  height: 50px;
+  background: var(--text-hover-focus);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  color: #ffffff;
+}
+
+.policy-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal-btn:focus {
+  background-color: rgba(24, 140, 232, 1);
 }
