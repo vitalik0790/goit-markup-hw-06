@@ -114,7 +114,7 @@ body {
   background: var(--text-hover-focus);
   border-radius: 2px;
   transform: scaleX(0);
-  --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--time-distribution-function);
 }
 
 .nav-menu .link:hover::after,
@@ -159,7 +159,7 @@ nav ul li:not(:last-child) {
 .auth-item:hover,
 .auth-item:focus {
   color: var(--text-hover-focus);
-  --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--time-distribution-function);
 }
 
 .header-container {
@@ -196,7 +196,7 @@ nav ul li:not(:last-child) {
 .auth-item:hover .auth-icon,
 .auth-item:focus .auth-icon {
   fill: var(--text-hover-focus);
-  --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--time-distribution-function);
 }
 
 /* Кнопки */
@@ -223,13 +223,13 @@ nav ul li:not(:last-child) {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--time-distribution-function);
 }
 
 .button:hover,
 .button:focus {
   color: var(--white-text-background);
-  --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--time-distribution-function);
 }
 
 .main-section {
@@ -330,7 +330,7 @@ nav ul li:not(:last-child) {
 .li-item:hover .paragraph,
 .li-item:focus .paragraph {
   transform: translateY(0);
-  --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--time-distribution-function);
 }
 
 /* Підвал */
@@ -450,7 +450,7 @@ nav ul li:not(:last-child) {
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--text-hover-focus);
-  --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--time-distribution-function);
 }
 
 .footer-link .icon {
